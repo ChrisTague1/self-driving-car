@@ -1,7 +1,7 @@
 const canvas = document.getElementById('my-canvas');
 
 const laneWidth = 60;
-const lanes = 10;
+const lanes = 3;
 
 canvas.width = lanes * laneWidth * 1.1;
 
@@ -20,7 +20,7 @@ car.draw(ctx);
 animate();
 
 function animate() {
-    car.update();
+    car.update(road.borders);
 
     canvas.height = window.innerHeight;
 
