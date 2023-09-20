@@ -15,8 +15,6 @@ const car = new Car(
     50
 );
 
-car.draw(ctx);
-
 animate();
 
 function animate() {
