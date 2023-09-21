@@ -19,7 +19,6 @@ class Car {
             this.brain = new NeuralNetwork([
                 this.sensor.rayCount,
                 6,
-                6,
                 4
             ]);
         }
@@ -91,7 +90,7 @@ class Car {
         return points;
     }
 
-    draw(ctx, color) {
+    draw(ctx, color, drawSensors = false) {
         if (this.damaged) {
             ctx.fillStyle = 'gray';
         } else {
@@ -107,7 +106,7 @@ class Car {
 
         ctx.fill();
         
-        if (this.sensor) {
+        if (drawSensors && this.sensor) {
             this.sensor.draw(ctx);
         }
     }

@@ -8,8 +8,6 @@ class Visualizer {
 
         const levelHeight = height / network.levels.length;
 
-        console.log(network.levels);
-
         for (let i = network.levels.length - 1; i >= 0; i--) {
             const levelTop = top + lerp(height - levelHeight, 0, network.levels.length === 1 ? 0.5 : i / (network.levels.length - 1));
 
