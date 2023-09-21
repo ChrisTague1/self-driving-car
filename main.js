@@ -56,7 +56,7 @@ function generateCars(n) {
     const cars = [];
     for (let i = 0; i < n; i++) {
         cars.push(new Car(
-            road.getLaneCenter(1), 100, 30, 50, 'AI', 10, 'blue'
+            road.getLaneCenter(1), 100, 30, 50, 'AI', 5, 'blue'
         ));
     }
 
