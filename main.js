@@ -12,7 +12,7 @@ const carCtx = carCanvas.getContext('2d');
 const networkCtx = networkCanvas.getContext('2d');
 
 const road = new Road(carCanvas.width / 2, carCanvas.width * 0.9, lanes);
-const cars = generateCars(1000);
+const cars = generateCars(300);
 let bestCar = cars[0];
 if (localStorage.getItem('bestBrain')) {
     for (let i = 0; i < cars.length; i++) {
