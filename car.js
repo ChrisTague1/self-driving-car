@@ -19,6 +19,7 @@ class Car {
             this.brain = new NeuralNetwork([
                 this.sensor.rayCount,
                 6,
+                6,
                 4
             ]);
         }
